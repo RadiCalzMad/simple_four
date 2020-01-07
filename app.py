@@ -21,7 +21,7 @@ class storeFOUR(db.Model): # This is the table (store_four)
 
 @app.route('/api/get4digit', methods=['POST','GET']) # this be the url for postman
 def get4digit():
-    data=request.get_json()
+    # data=request.get_json()
     # data['whatever the thing is named as']
     if request == 'POST':
         code = ''.join(random.choices(string.digits, k=4))# Generate OTP lol
